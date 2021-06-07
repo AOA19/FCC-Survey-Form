@@ -1,0 +1,142 @@
+/* Colors: 
+#482728,#8B5569, #B287A3, #C0F8D1, #BDCFB5 
+ #ECFFE1, #3C572B #8FD6B0, #FCBFB7, 
+#593c8f,#907AD6, #0091AD, #8FD6B0, #5F5566
+#FF6F59, #254441,#43AA8B #C33243, */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #ecffe1;
+}
+
+/****************** The following is the styling of the header section *********************/
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+span {
+  font-size: 16px;
+}
+
+#title {
+  color: #8b5569;
+  font-family: "Sahitya", serif;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+#description {
+  color: #8b5569;
+  font-family: "Sahitya", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*************** The following is the styling of the survey form ***********************/
+
+#survey-form {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  max-width: 650px;
+  margin: 40px auto auto auto;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.form-headers {
+  color: #8b5569;
+  font-family: "Oswald", sans-serif;
+  font-size: 23px;
+}
+
+.form-group {
+  padding: 10px 20px 10px 20px;
+}
+
+.form-box {
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 8px;
+  width: 100%;
+  border: solid 2px #898e7b;
+  border-radius: 5px;
+  font-family: "Taviraj", serif;
+  font-size: 15px;
+}
+
+/* The following styling is for the actually radio button that 
+will be clicked on, and the option next to the button: */
+.radio-button {
+  width: 15px;
+  height: 15px;
+}
+
+.radioButton-value {
+  font-family: "Taviraj", serif;
+  font-size: 18px;
+  padding-left: 8px;
+}
+
+/* The following styling is for the actually checkbox button that 
+will be clicked on, and the option next to the button: */
+.checkbox-button {
+  width: 15px;
+  height: 15px;
+}
+
+.checkboxButton-value {
+  font-family: "Taviraj", serif;
+  font-size: 18px;
+  padding-left: 8px;
+}
+
+/* Styling for the comments box */
+textarea {
+  font-size: 16px;
+  font-family: "Taviraj", serif;
+  color: #8b5569;
+}
+
+#addComments {
+  max-width: 100%;
+}
+
+/* Styling for the form box submit button */
+#submit {
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: #8b5569;
+}
+
+#submit:hover {
+  background-color: #b287a3;
+  transition: 200ms;
+  cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+  #survey-form {
+    max-width: 100%;
+  }
+}
+
+/********* The following is the the styling for the half circle used for the background ******/
+#half-circle {
+  position: fixed;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 720px;
+  width: 1100px;
+  max-width: 100%;
+  border-radius: 600px 600px 0 0;
+  background-color: #8fd6b0;
+}
