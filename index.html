@@ -17,9 +17,10 @@
   <body>
     <!------------------------ Page title ------------------------>
     <header>
-      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <h1 id="title">The Bachelor Survey Form</h1>
       <p id="description">
-        Thank you for taking the time to help us improve the platform!
+        Have you seen the bachelor/bachelorette? Please take this survey and let
+        us know what you think.
       </p>
     </header>
 
@@ -27,7 +28,9 @@
     <form action="#" id="survey-form">
       <!---------------- Name form box ------------------------>
       <div class="form-group">
-        <label id="name-label" class="form-headers" for="name"> Name* </label>
+        <label id="name-label" class="form-headers" for="name">
+          Name <span>*</span></label
+        >
         <br />
         <input
           type="text"
@@ -41,7 +44,9 @@
 
       <!------------------- Email form box -------------------------->
       <div class="form-group">
-        <label for="email" id="email-label" class="form-headers">Email* </label>
+        <label for="email" id="email-label" class="form-headers"
+          >Email<span>*</span>
+        </label>
         <br />
         <input
           type="email"
@@ -70,80 +75,65 @@
         />
       </div>
 
-      <!-------------- Current role dropdown ----------------->
+      <!---------------- Do you like to watch radio buttons --------------------->
       <div class="form-group">
-        <label for="role" id="dropdown-label1" class="form-headers"
-          >Which option best describes your current role?*
+        <label for="preference" id="radioButton-label" class="form-headers"
+          >Do you like to watch the bachelor/bachelorette?<span>*</span>
+        </label>
+        <br />
+        <input type="radio" class="radio-button" name="choices" value="yes" />
+        <label for="radio-one" class="radioButton-value">Yes</label>
+        <br />
+        <input type="radio" class="radio-button" name="choices" value="no" />
+        <label for="radio-two" class="radioButton-value">No</label>
+        <br />
+        <input
+          type="radio"
+          class="radio-button"
+          name="choices"
+          value="sometimes"
+        />
+        <label for="radio-three" class="radioButton-value">Sometimes</label>
+      </div>
+
+      <!-------------- How do you usually watch dropdown ----------------->
+      <div class="form-group">
+        <label for="role" id="dropdown-label" class="form-headers"
+          >How do you usually watch the bachelor/bachelorette?<span>*</span>
         </label>
         <br />
         <select name="role" id="dropdown" class="form-box" required>
-          <option value="" disabled selected>Select current role</option>
-          <option value="Student">Student</option>
-          <option value="Full Time Job">Full Time Job</option>
-          <option value="Full Time Learner">Full Time Learner</option>
-          <option value="Prefer Not to Say">Prefer Not to Say</option>
-          <option value="Other">Other</option>
+          <option disabled selected value>
+            Select the one that applies to you
+          </option>
+          <option value="By myself">By myself</option>
+          <option value="With my significant other">
+            With my significant other
+          </option>
+          <option value="With family or friends">With family or friends</option>
+          <option value=">With a watch party">With a watch party</option>
+          <option value="With my pets">With my pets</option>
+          <option value="I don't watch">I don't watch</option>
         </select>
       </div>
 
-      <!---------------- Recommendation radio buttons --------------------->
+      <!-------------- Spinoff preferences Checkboxes ------------->
       <div class="form-group">
-        <label for="recommendation" id="radioButton-label" class="form-headers"
-          >Would you recommend freeCodeCamp to a friend?*
-        </label>
-        <br />
-        <input
-          type="radio"
-          class="radio-button"
-          name="choices"
-          value="definitely"
-        />
-        <label for="radio-one" class="radioButton-value">Definitely</label>
-        <br />
-        <input type="radio" class="radio-button" name="choices" value="maybe" />
-        <label for="radio-two" class="radioButton-value">Maybe</label>
-        <br />
-        <input
-          type="radio"
-          class="radio-button"
-          name="choices"
-          value="not sure"
-        />
-        <label for="radio-three" class="radioButton-value">Not Sure</label>
-      </div>
-
-      <!---------------- Favorite feature dropdown ---------------------->
-      <div class="form-group">
-        <label for="features" id="dropdown-label2" class="form-headers"
-          >What is your favorite feature of freeCodeCamp?*
-        </label>
-        <br />
-        <select name="features" id="dropdown-two" class="form-box" required>
-          <option value="" disabled selected>Select an option</option>
-          <option value="Challenges">Challenges</option>
-          <option value="Projects">Projects</option>
-          <option value="Community">Community</option>
-          <option value="Open Source">Open Source</option>
-        </select>
-      </div>
-
-      <!-------------- Improvement Checkboxes ------------->
-      <div class="form-group">
-        <label for="improvements" id="checkbox-label" class="form-headers"
-          >What would you like to see improved?*
+        <label for="spinoff" id="checkbox-label" class="form-headers"
+          >Which spinoff have you watched?
           <span>(Check all that apply)</span></label
         >
         <br />
-        <!---------- The following 11 options ------------>
+        <!---------- The following 6 options ------------>
         <input
           type="checkbox"
           id="checkbox-one"
           class="checkbox-button"
           name="checkbox-one"
-          value="front-end"
+          value="bachelor"
         />
         <label for="checkbox-one" class="checkboxButton-value"
-          >Front-end Projects</label
+          >The Bachelor</label
         >
         <br />
         <input
@@ -151,10 +141,10 @@
           id="checkbox-two"
           class="checkbox-button"
           name="checkbox-two"
-          value="back-end"
+          value="bachelorette"
         />
         <label for="checkbox-two" class="checkboxButton-value"
-          >Back-end Projects</label
+          >The Bachelorette</label
         >
         <br />
         <input
@@ -162,10 +152,10 @@
           id="checkbox-three"
           class="checkbox-button"
           name="checkbox-three"
-          value="data"
+          value="paradise"
         />
         <label for="checkbox-three" class="checkboxButton-value"
-          >Data Visualization</label
+          >Bachelor in Paradise</label
         >
         <br />
         <input
@@ -173,10 +163,10 @@
           id="checkbox-four"
           class="checkbox-button"
           name="checkbox-four"
-          value="challenges"
+          value="heart"
         />
         <label for="checkbox-four" class="checkboxButton-value"
-          >Challenges</label
+          >Listen To Your Heart</label
         >
         <br />
         <input
@@ -184,10 +174,10 @@
           id="checkbox-five"
           class="checkbox-button"
           name="checkbox-five"
-          value="open-source"
+          value="winter"
         />
         <label for="checkbox-five" class="checkboxButton-value"
-          >Open Source Community</label
+          >Bachelor Winter Games</label
         >
         <br />
         <input
@@ -195,59 +185,10 @@
           id="checkbox-six"
           class="checkbox-button"
           name="checkbox-six"
-          value="gitter"
+          value="pad"
         />
         <label for="checkbox-six" class="checkboxButton-value"
-          >Gitter Help Rooms</label
-        >
-        <br />
-        <input
-          type="checkbox"
-          id="checkbox-seven"
-          class="checkbox-button"
-          name="checkbox-seven"
-          value="videos"
-        />
-        <label for="checkbox-seven" class="checkboxButton-value">Videos</label>
-        <br />
-        <input
-          type="checkbox"
-          id="checkbox-eight"
-          class="checkbox-button"
-          name="checkbox-eight"
-          value="meetups"
-        />
-        <label for="checkbox-eight" class="checkboxButton-value"
-          >City Meetups</label
-        >
-        <br />
-        <input
-          type="checkbox"
-          id="checkbox-nine"
-          class="checkbox-button"
-          name="checkbox-nine"
-          value="wiki"
-        />
-        <label for="checkbox-nine" class="checkboxButton-value">Wiki</label>
-        <br />
-        <input
-          type="checkbox"
-          id="checkbox-ten"
-          class="checkbox-button"
-          name="checkbox-ten"
-          value="forum"
-        />
-        <label for="checkbox-ten" class="checkboxButton-value">Forum</label>
-        <br />
-        <input
-          type="checkbox"
-          id="checkbox-eleven"
-          class="checkbox-button"
-          name="checkbox-eleven"
-          value="courses"
-        />
-        <label for="checkbox-eleven" class="checkboxButton-value"
-          >Additional Courses</label
+          >Bachelor Pad</label
         >
         <br />
       </div>
@@ -255,13 +196,13 @@
       <!---------------- Additonal comments text box ----------------->
       <div class="form-group">
         <label for="textBox" id="textBox-label" class="form-headers"
-          >Any comments or suggestions?
+          >Let us know who your favorite lead, contestant, and/or couple is
         </label>
         <br />
         <textarea
           name="addComments"
           id="addComments"
-          placeholder="Enter your comment here..."
+          placeholder="Enter your comments here..."
           cols="70"
           rows="7"
         ></textarea>
@@ -272,9 +213,8 @@
         <input type="submit" value="Submit" id="submit" class="form-box" />
       </div>
     </form>
-    <!-- This is the half circle that will be used in the background -->
-    <div id="half-circle"></div>
 
+    <!------------- JavaScript link -------------->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
